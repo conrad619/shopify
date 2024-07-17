@@ -4,8 +4,9 @@ export default defineConfig({
   css: {
     preprocessorOptions: {
       css: {
-        additionalData: '@import "./src/styles.css";',
+        additionalData: '@import "./styles.css";',
       },
     },
   },
+  base: "/shopify/",
 });
