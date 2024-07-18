@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/shopify/vite.svg" />
+    <link rel="icon" type="image/png" href="/shopify/assets/logo-DDdW2U55.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Conrad Reyes - Shopify Developer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,8 +12,8 @@
     <link href="
     https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
     " rel="stylesheet">
-    <script type="module" crossorigin src="/shopify/assets/index-B4dq7lmP.js"></script>
-    <link rel="stylesheet" crossorigin href="/shopify/assets/index-55bXmqlq.css">
+    <script type="module" crossorigin src="/shopify/assets/index-CBIauoVA.js"></script>
+    <link rel="stylesheet" crossorigin href="/shopify/assets/index-ua4qFXjN.css">
   </head>
   <body class="font-['Poppins'] ">
     <header class="  absolute md:top-[25px] md:px-20 w-full">
@@ -22,12 +22,12 @@
           <img src="/shopify/assets/logo-DDdW2U55.png" alt="logo" class="w-[50px]">
         </div>
         <ul class="md:flex hidden justify-end gap-10 font-semibold text-[24px] flex-wrap ">
-          <li><a href="/#home">Home</a></li>
-          <li><a href="/#about">About</a></li>
-          <li><a href="/#services">Services</a></li>
-          <li><a href="/#solutions">Solutions</a></li>
-          <li><a href="/#portfolio">Portfolio</a></li>
-          <li><a href="/#contact">Contact</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#solutions">Solutions</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
         <div class="md:hidden mobile-menu">
           <i class="fa-sharp fa-solid fa-bars text-[24px] menu-bar"></i>
@@ -35,12 +35,12 @@
         </div>
         
         <ul style="display:none" class="mobile-drop bg-white top-full w-full left-0 flex z-10 absolute flex-col items-center justify-center gap-2 p-5 font-semibold text-[18px] flex-wrap ">
-          <li><a href="/#home">Home</a></li>
-          <li><a href="/#about">About</a></li>
-          <li><a href="/#services">Services</a></li>
-          <li><a href="/#solutions">Solutions</a></li>
-          <li><a href="/#portfolio">Portfolio</a></li>
-          <li><a href="/#contact">Contact</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#solutions">Solutions</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -170,6 +170,9 @@
         <div>conradreyes123@gmail.com</div>
       </div>
     </footer>
+    <a href="#home" class="go-up drop-shadow-[-7px_7px_0px_#c6effc80] bg-white rounded-full p-5 fixed md:bottom-10 md:right-10 bottom-5 right-5 z-20">
+      <i class="fa-solid fa-chevron-up text-[24px]"></i>
+    </a>
     <div id="app"></div>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="
@@ -342,6 +345,13 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
           $('.mobile-drop').hide()
         }
       })
+      
+      $('.mobile-drop').on('click',function(){
+        $('.mobile-drop').hide()
+        $('.menu-bar').show()
+        $('.menu-close').hide()
+      })
+
     </script>
   </body>
 </html>
